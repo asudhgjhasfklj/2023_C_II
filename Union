@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+union MyUnion {
+    int i;
+    float f;
+    char str[20];
+};
+int main() {
+    union MyUnion u;
+    u.i = 42;
+    printf("Integer: %d\n", u.i);
+    u.f = 3.14;
+    printf("Float: %f\n", u.f);
+    strcpy(u.str, "Hello, Union!");
+    printf("String: %s\n", u.str);
+    return 0;
+}
