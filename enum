@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+enum Days {
+    SUNDAY,    // 0
+    MONDAY,    // 1
+    TUESDAY,   // 2
+    WEDNESDAY, // 3
+    THURSDAY,  // 4
+    FRIDAY,    // 5
+    SATURDAY   // 6
+};
+
+int main() {
+    enum Days today = WEDNESDAY;
+    if (today == WEDNESDAY) {
+        printf("오늘은 수요일입니다.\n");
+    } else {
+        printf("오늘은 다른 요일입니다.\n");
+    }
+    return 0;
+}
+
+enum을 이용해 숫자를 요일로 바꿔 가독성을 높였고 today를 WEDNESDAY로 설정해 "오늘은 수요일입니다."가 출력되는 코드다. 
